@@ -24,7 +24,7 @@ namespace Sayabeans.UploadWithoutPreCheck.Editor
                 return false;
             }
 
-            return Selection.activeGameObject.GetComponent<VRCAvatarDescriptor>() != null;
+            return Selection.activeGameObject.activeInHierarchy && Selection.activeGameObject.GetComponent<VRCAvatarDescriptor>() != null;
         }
 
         [MenuItem(menuName, false, menuPriority)]
