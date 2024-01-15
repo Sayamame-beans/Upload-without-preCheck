@@ -133,9 +133,11 @@ namespace Sayabeans.UploadWithoutPreCheck.Editor
             catch
             {
                 EditorUtility.DisplayDialog("Upload Failed", "Failed to Upload. Please see the console tab and check the error.\n\n"
-                + "アップロードに失敗しました。 Consoleタブを確認して、エラーを確認してください。", "OK");
+                + "アップロードに失敗しました。Consoleタブを確認して、エラーを確認してください。", "OK");
                 throw;
             }
+        EditorUtility.DisplayDialog("Upload Successful", "Upload Succeeded!\nTarget avatar: \"" + targetAvatar.name + "\"\n\n"
+        + "アップロードが完了しました！\n対象アバター: \"" + targetAvatar.name + "\"", "OK");
         }
     }
 
