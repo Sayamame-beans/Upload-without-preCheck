@@ -94,6 +94,16 @@ namespace Sayabeans.UploadWithoutPreCheck.Editor
                         return;
                     }
 
+                    if (string.IsNullOrWhiteSpace(AvatarBuilderSessionState.AvatarName))
+                    {
+                        EditorUtility.DisplayDialog("Upload Canceled", "You are trying to upload a new avatar.\n"
+                        + "To upload a new avatar, you must set the avatar name.\n"
+                        + "Please set the avatar name in the VRCSDK Control Panel.\n\n"
+                        + "新しいアバターをアップロードしようとしています。\n新しいアバターをアップロードするには、アバター名を入力する必要があります。\n"
+                        + "VRCSDKのコントロールパネルでアバター名を入力してください。", "OK");
+                        return;
+                    }
+
                     thumbnailPath = AvatarBuilderSessionState.AvatarThumbPath;
 
                     if (string.IsNullOrEmpty(thumbnailPath))
@@ -101,7 +111,7 @@ namespace Sayabeans.UploadWithoutPreCheck.Editor
                         EditorUtility.DisplayDialog("Upload Canceled", "You are trying to upload a new avatar.\n"
                         + "To upload a new avatar, you must prepare the avatar thumbnail.\n"
                         + "Please prepare the avatar thumbnail in the VRCSDK Control Panel.\n\n"
-                        + "新しいアバターをアップロードしようとしています。\n新しいアバターをアップロードするには、アバターのサムネイル画像を用意する必要があります。"
+                        + "新しいアバターをアップロードしようとしています。\n新しいアバターをアップロードするには、アバターのサムネイル画像を用意する必要があります。\n"
                         + "VRCSDKのコントロールパネルでアバターのサムネイル画像を用意してください。", "OK");
                         return;
                     }
