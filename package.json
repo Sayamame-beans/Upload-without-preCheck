@@ -1,0 +1,16 @@
+{
+  "name": "com.github.sayamame-beans.upload-without-precheck",
+  "version": "0.0.0",
+  "displayName": "Upload without pre-check",
+  "author": {
+    "name": "Sayamame-beans",
+    "url": "https://github.com/Sayamame-beans"
+  },
+  "url": "https://github.com/Sayamame-beans/Upload-without-preCheck",
+  "repo": "https://sayabeans.github.io/vpm/index.json",
+  "vpmDependencies": {
+    "com.vrchat.avatars": ">=3.4.2 <3.6.0"
+  },
+  "description": "Add a menuitem to Upload an avatar without pre-check.",
+  "unity": "2019.4"
+}
