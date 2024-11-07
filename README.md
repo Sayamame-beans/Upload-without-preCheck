@@ -6,10 +6,10 @@ Android向けにビルドしたい場合などにおいて、AAO等の非破壊�
 なお、VRCSDKにはビルド後チェック(アップロード直前のチェック)の仕組みもあるため、制限を超過している場合にはアップロードに失敗します。
 
 ### 導入方法
-(VPMリポジトリが追加済みの場合、VCCからそのまま追加出来ます。)
+(VPMリポジトリが追加済みの場合、VCCやALCOMからそのまま追加出来ます。)
 1. https://sayabeans.github.io/vpm にアクセスします。
-2. "Add to VCC"をクリックしてVCCに追加します。
-3. VCCからパッケージを追加します。
+2. "Add to VCC"をクリックしてVCCやALCOMにVPMリポジトリを登録します。
+3. VCCやALCOMからプロジェクトにパッケージを追加します。
 
 ### 使い方
 1. VRCSDKのコントロールパネルを開きます
@@ -29,6 +29,12 @@ NDMFかVRCSDKに同様の機能が追加された場合、このパッケージ�
 ---
 ## English Description
 Add a menuitem to Upload an avatar without pre-check.
+
+### How To Install
+(If you had added my VPM repository, you can already add this package with VCC/ALCOM.)
+1. Go to https://sayabeans.github.io/vpm .
+2. Click "Add to VCC" button and add VPM repository to VCC/ALCOM.
+3. Add the package with VCC/ALCOM to your project.
 
 ### How To Use
 1. Open the VRCSDK Control Panel
