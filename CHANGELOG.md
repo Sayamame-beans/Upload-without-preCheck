@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased] - 2024-xx-xx (Unreleased)
+## [Unreleased] - 2025-xx-xx (Unreleased)
 ### Added
 
 ### Changed
@@ -12,6 +12,12 @@
 ### Fixed
 
 ### Security
+
+## [1.0.3] - 2025-04-23
+### Added
+- VRCSDK 3.8.x系との互換性を宣言しました。
+  - 現時点で互換性があると宣言しているVRCSDKのバージョンの範囲は`>=3.4.2 <3.9.0`です。
+  - VRCSDK 3.8.0においては、アップロード処理を開始してしばらくした後に、SDKのコントロールパネル上で同意確認用のOKボタンを押す必要がある場合があります。
 
 ## [1.0.2] - 2024-08-21
 ### Added
